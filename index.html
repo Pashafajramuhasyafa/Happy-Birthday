@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Happy Birthday 💖</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+</head>
+
+<body>
+
+  <!-- Floating Emoji -->
+  <div id="emoji-container"></div>
+
+  <!-- Opening Screen -->
+  <section id="opening-screen">
+
+    <div class="opening-card">
+
+      <div class="gift">🎁</div>
+
+      <h1>Haii Sayanggg 💖</h1>
+
+      <p>
+        Aku punya kejutan spesial buat kamu 🥺✨
+      </p>
+
+      <button onclick="openWebsite()">
+        Buka Suratnya Yaaa 💌
+      </button>
+
+    </div>
+
+  </section>
+
+  <!-- Music -->
+  <audio id="bg-music" loop>
+    <source src="biru.mp3" type="audio/mp3">
+  </audio>
+
+  <!-- Music Button -->
+  <div class="music-player">
+
+    <p>🎵 Our Song</p>
+
+    <button onclick="document.getElementById('bg-music').play()">
+      ▶ Play Music
+    </button>
+
+  </div>
+
+  <!-- Main Content -->
+  <main id="main-content">
+
+    <div class="container">
+
+      <div class="card">
+
+        <!-- Hero -->
+        <section class="hero">
+
+          <img src="mehsa.jpeg" alt="Birthday">
+
+          <div class="overlay">
+
+            <h1>Happy Birthday Meysa Putri Namira ❤️</h1>
+
+            <p>
+              Hari ini dunia jadi lebih indah karena kamu hadir di dalamnya ✨
+            </p>
+
+          </div>
+
+        </section>
+
+        <!-- Content -->
+        <section class="content">
+
+          <!-- Title -->
+          <div class="title-box">
+
+            <h2>
+              Untuk Pacarkuu Yang Paling Cantik Sedunia 🥺💘
+            </h2>
+
+          </div>
+
+          <!-- Typing Message -->
+          <div class="message-box">
+
+            <p id="typing-text"></p>
+
+          </div>
+
+          <!-- Gallery -->
+          <div class="gallery-title">
+
+            📸 Galeri Kenangan Kita
+
+          </div>
+
+          <div class="gallery">
+
+            <!-- Photo 1 -->
+            <div class="photo-card">
+
+              <img
+                src="4.jpeg"
+                onclick="openPhoto(this.src)"
+              >
+
+              <p>
+                Senyum favorit aku 😭💖
+              </p>
+
+            </div>
+
+            <!-- Photo 2 -->
+            <div class="photo-card">
+
+              <img
+                src="7.png"
+                onclick="openPhoto(this.src)"
+              >
+
+              <p>
+                Couple paling lucu 😆❤️
+              </p>
+
+            </div>
+
+            <!-- Photo 3 -->
+            <div class="photo-card">
+
+              <img
+                src="3.jpeg"
+                onclick="openPhoto(this.src)"
+              >
+
+              <p>
+                Semoga kita selamanya 🥺✨
+              </p>
+
+            </div>
+
+          </div>
+
+        </section>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- Popup -->
+  <div
+    class="popup"
+    id="popup"
+    onclick="closePhoto()"
+  >
+
+    <img id="popup-img">
+
+  </div>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+
+</body>
+</html>
